@@ -1,0 +1,38 @@
+name: Infinitude
+version: "1.0.0"
+slug: infinitude
+
+description: Carrier Infinity thermostat proxy
+
+url: https://github.com/nebulous/infinitude
+
+startup: services
+boot: auto
+
+arch:
+  - aarch64
+
+host_network: true
+
+ports:
+  3000/tcp: 3000
+
+ports_description:
+  3000/tcp: Carrier Infinity Proxy
+
+webui: "http://[HOST]:[PORT:3000]/"
+
+options:
+  app_secret: Pogotudinal
+  pass_reqs: 1020
+  mode: Production
+
+schema:
+  app_secret: str
+  pass_reqs: int
+  mode: str
+
+map:
+  - type: addon_config
+    path: /config
+    read_only: false
