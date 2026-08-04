@@ -1,6 +1,4 @@
-ARG BUILD_FROM
-
-FROM ${BUILD_FROM}
+FROM nebulous/infinitude:latest
 
 COPY run.sh /run.sh
 
