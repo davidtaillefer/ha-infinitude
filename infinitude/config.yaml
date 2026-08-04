@@ -26,11 +26,21 @@ options:
   app_secret: Pogotudinal
   pass_reqs: 1020
   mode: Production
+  mqtt_broker: "core-mosquitto:1883"
+  mqtt_user: "david"
+  mqtt_pass: "meach1"
+  mqtt_prefix: "homeassistant"
+  mqtt_topic: "infinitude"
 
 schema:
   app_secret: str
   pass_reqs: int
   mode: str
+  mqtt_broker: str
+  mqtt_user: str
+  mqtt_pass: password
+  mqtt_prefix: str
+  mqtt_topic: str
 
 map:
   - type: addon_config

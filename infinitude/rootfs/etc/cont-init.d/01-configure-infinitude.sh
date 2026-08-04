@@ -1,7 +1,21 @@
-#!/usr/bin/with-contenv bashio
+#!/bin/bash
 
-export APP_SECRET=$(bashio::config 'app_secret')
-export PASS_REQS=$(bashio::config 'pass_reqs')
-export MODE=$(bashio::config 'mode')
+echo "=== FILESYSTEM ==="
+ls -la /
 
-bashio::log.info "Configuring Infinitude"
+echo "=== DATA DIR ==="
+ls -la /data
+
+echo "=== CONFIG DIR ==="
+ls -la /config
+
+echo "=== OPTIONS.JSON ==="
+cat /data/options.json
+
+echo "=== MQTT VARIABLES ==="
+echo "MQTT_BROKER=$MQTT_BROKER"
+echo "MQTT_USER=$MQTT_USER"
+echo "MQTT_PREFIX=$MQTT_PREFIX"
+echo "MQTT_TOPIC=$MQTT_TOPIC"
+
+exec /infinitude/entrypoint.sh
