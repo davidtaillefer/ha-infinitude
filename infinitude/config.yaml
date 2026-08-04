@@ -1,5 +1,5 @@
 name: Infinitude
-version: "1.0.3"
+version: "1.0.4"
 slug: infinitude
 
 description: Carrier Infinity thermostat proxy
@@ -41,8 +41,3 @@ schema:
   mqtt_pass: password
   mqtt_prefix: str
   mqtt_topic: str
-
-map:
-  - type: addon_config
-    path: /config
-    read_only: false
