@@ -1,4 +1,4 @@
-FROM nebulous/infinitude:latest
+FROM davidtaillefer/infinitude:latest
 
 COPY run.sh /run.sh
 

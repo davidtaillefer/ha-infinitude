@@ -4,7 +4,7 @@ slug: infinitude
 
 description: Carrier Infinity thermostat proxy
 
-url: https://github.com/nebulous/infinitude
+url: https://github.com/davidtaillefer/infinitude
 
 startup: services
 boot: auto
