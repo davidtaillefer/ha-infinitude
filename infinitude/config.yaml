@@ -1,10 +1,10 @@
 name: Infinitude
-version: "1.0.7"
+version: "1.0.8"
 slug: infinitude
 
 description: Carrier Infinity thermostat proxy
 
-url: https://github.com/davidtaillefer/infinitude
+url: https://github.com/nebulous/infinitude
 
 startup: services
 boot: auto
