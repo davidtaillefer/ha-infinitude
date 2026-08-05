@@ -1,5 +1,5 @@
 name: Infinitude
-version: "1.0.8"
+version: "1.0.9"
 slug: infinitude
 
 description: Carrier Infinity thermostat proxy
@@ -14,13 +14,18 @@ arch:
 
 host_network: true
 
+ingress: true
+ingress_port: 3000
+ingress_entry: /
+
+panel_icon: mdi:thermostat
+panel_title: Infinitude
+
 ports:
   3000/tcp: 3000
 
 ports_description:
   3000/tcp: Carrier Infinity Proxy
-
-webui: "http://[HOST]:[PORT:3000]/"
 
 options:
   app_secret: Pogotudinal
